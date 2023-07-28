@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录和注册</title>
+    <style>
+        body {
+            background-image: url('img/logo.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 4px;
+        }
+        .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .form-container input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            pointer;
+            width: 100%;
+           : 08        }
+    </style>
+</head>
+<body>
+   <h2>登录</h2>
+        <form action="/login" method="post">
+            <label for="loginUsername">用户名:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">密码:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+           input type="submit" value="登录">
+        </form>
+    </div>
+
+    <div class="form-container">
+       <h2>注册</h2>
+        <form action="/register" method="post">
+            <label for="registerUsername">用户名:</label>
+            <input type="text" id="registerUsername" name="registerUsername" required>
+            <label for="registerPassword">密码:</label>
+           input type="password" id="registerPassword" name="registerPassword" required>
+            <label for="registerEmail">电子邮件:</label>
+            <input type="email" id="registerEmail" name="registerEmail" required>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+</body>
+</html>
